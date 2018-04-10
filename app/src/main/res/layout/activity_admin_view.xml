@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win.sampleproject.adminView">
+
+    <Button
+        android:id="@+id/datewise"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/viewPending"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="View Date Wise"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/viewPending"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datewise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="view pending"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/viewPending"
+        android:layout_alignTop="@+id/viewPending"
+        android:layout_marginTop="78dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="view all complaints"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/graph"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/update"
+        android:layout_below="@+id/viewPending"
+        android:layout_marginTop="116dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="view Graph"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CMRGrievanceCell</string>
+    <string-array name="complainttypespinner">
+        <item>Academics</item>
+        <item>AdminIssues</item>
+        <item>Canteen</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="yearspinner">
+        <item>IV</item>
+        <item>III</item>
+        <item>II</item>
+        <item>I</item>
+    </string-array>
+    <string-array name="sectionspinner">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+</resources>

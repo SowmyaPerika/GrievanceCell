@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win.sampleproject.adminviewpendingdetails">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="select year"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/yearspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="19dp"
+        android:padding="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/yearspinner"
+        android:layout_marginTop="21dp"
+        android:text="select section"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/sectionspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView29"
+        android:layout_marginTop="23dp"
+        android:padding="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/textview30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sectionspinner"
+        android:layout_marginTop="21dp"
+        android:text="select type"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/complainttypespinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textview30"
+        android:layout_marginTop="24dp"
+        android:padding="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@color/colorAccent"
+        android:text="generate result"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
