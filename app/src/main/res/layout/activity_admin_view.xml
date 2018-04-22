@@ -51,4 +51,13 @@
         android:text="view Graph"
         android:textColor="@android:color/black" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/graph"
+        android:layout_below="@+id/graph"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="25dp" />
+
 </RelativeLayout>

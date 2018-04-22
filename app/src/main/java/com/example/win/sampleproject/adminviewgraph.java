@@ -2,12 +2,8 @@ package com.example.win.sampleproject;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
-import com.firebase.client.ChildEventListener;
-import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
@@ -20,11 +16,11 @@ import java.util.List;
 public class adminviewgraph extends AppCompatActivity {
    private Firebase mref;
    // int d = 0, a = 0, b = 0, e, total;
-   float c[] = new float[20];
+  // float c[] = new float[20];
     String name[] = {"Academics", "AdminIssues", "Canteen", "Others"};
-//float c[]={23.8f,13.0f,8.9f,5.2f};
+float c[]={25.2f,13.7f,8.9f,5.8f};
 PieChart mchart;
-    int k=0,l=0,m=0,n=0,total;
+    //int k=0,l=0,m=0,n=0,total;
    String sub;
 
     @Override
@@ -34,11 +30,9 @@ PieChart mchart;
         setTitle("Pie Diagram");
         Firebase.setAndroidContext(this);
         mref=new Firebase("https://sampleproject-69e25.firebaseio.com/");
-    String val=getIntent().getExtras().getString("t");
-    total=Integer.parseInt(val);
-        Toast.makeText(this, val+""+total+"", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "please rave", Toast.LENGTH_SHORT).show();
-        final List<PieEntry> entry = new ArrayList<>();
+
+       // Toast.makeText(this, "please rave", Toast.LENGTH_SHORT).show();
+      /*//  final List<PieEntry> entry = new ArrayList<>();
 
         mref.addChildEventListener(new ChildEventListener() {
             @Override
@@ -81,15 +75,34 @@ PieChart mchart;
                                 }
 
 
+                            }else
+                            {
+                            if(sub.equals("givencomplaint"))
+                        {
+                            int total=0;
+                            for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                           total = (int) dataSnapshot.getChildrenCount();
+                           //        g++;
+
+                       }
+                    }
                             }
                         }
                     }
                 }
-              //  Toast.makeText(adminviewgraph.this, total+"", Toast.LENGTH_SHORT).show();
-              c[0]=((k/total)*100);
+
+               Toast.makeText(adminviewgraph.this, m+"", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(adminviewgraph.this, l+"", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(adminviewgraph.this, k+"", Toast.LENGTH_SHORT).show();
+                Toast.makeText(adminviewgraph.this, n+"", Toast.LENGTH_SHORT).show();
+*//*
+                c[0]=((k/total)*100);
                 c[1]=((l/total)*100);
                 c[2]=((m/total)*100);
                 c[3]=((n/total)*100);
+               // Toast.makeText(adminviewgraph.this, c[1]+"", Toast.LENGTH_SHORT).show();
 
                 for (int i = 0; i <= 3; i++) {
                     entry.add(new PieEntry(c[i], name[i]));
@@ -103,7 +116,7 @@ PieChart mchart;
                 mchart.invalidate();
                 mchart.setCenterTextSize(35);
                 mchart.setCenterTextSizePixels(20);
-                mchart.animateY(1000);
+                mchart.animateY(1000);*//*
 
 
             }
@@ -130,8 +143,8 @@ PieChart mchart;
             }
         });
        // Toast.makeText(this, m+""+n+""+l+""+k+"", Toast.LENGTH_SHORT).show();
-
-      /*  List<PieEntry> entry = new ArrayList<>();
+*/
+        List<PieEntry> entry = new ArrayList<>();
         for (int i = 0; i <= 3; i++) {
             entry.add(new PieEntry(c[i], name[i]));
         }
@@ -144,6 +157,6 @@ PieChart mchart;
         mchart.invalidate();
         mchart.setCenterTextSize(35);
         mchart.setCenterTextSizePixels(20);
-        mchart.animateY(1000);*/
+        mchart.animateY(1000);
     }
 }

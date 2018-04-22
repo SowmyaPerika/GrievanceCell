@@ -35,7 +35,6 @@
         <activity android:name=".adminstart" />
         <activity android:name=".adminAnswer" />
         <activity android:name=".adminthank" />
-        <activity android:name=".BarGraph"></activity>
     </application>
 
 </manifest>
